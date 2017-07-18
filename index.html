@@ -8,16 +8,16 @@
 <body>
 <div class="wrapper">
 	<header>
-		<h1>Monk's Cafe</h1>
-		<h3>"The Coffee Shop"</h3>
 		<img src="images/toms-restaurant.jpg" alt="Picture of Toms Restaurant" title="Toms Restaurant" id="headerImage">
+		<h1>Monk's Cafe</h1>
+		<h4>"The Coffee Shop"</h4>
 	</header>
 	<main>
-		<h1>Reservations</h1>
-		<section id="columns">
+		<section id="columns" class="clearfix">
+		<h2>Reservations</h2>
 			<div id="reservations">
 				<h3>Make a Reservation</h3>
-				<form>
+				<form id="reservationForm">
 					<input type="text" placeholder="Name" id="customerName">
 					<input type="text" placeholder="Date" id="reservationDate">
     				<button id="makeReservation">Confirm Reservation</button>
@@ -25,7 +25,7 @@
 			</div>
 			<div id="existingReservations">
 				<h3>Existing Reservations</h3>
-				<table border="1">
+				<table border="1" id="reservationTable">
 					<thead>
 						<th>Name</th>
 						<th>Day</th>
@@ -34,12 +34,12 @@
 				</table>
 			</div>
 		</section>
-		<h1>Come Dine with Us</h1>
-
-		<div id="map"></div>
-
+		<div id="directions">
+			<h2>Come Dine with Us</h2>
+			<div id="map"></div>
+		</div>
 		<aside class="reviews">
-			<h1>Customer Reviews</h1>
+			<h2>Customer Reviews</h2>
 			<p>"Big lettuce, big carrots, tomatoes like volleyballs."
 			<br>
 			- Jerry Seinfield, on The BIG Salad</p>
